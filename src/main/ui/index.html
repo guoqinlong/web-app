@@ -5,9 +5,30 @@
     <title>Let's Chat</title>
 </head>
 <body>
+<script>
+    function register() {
+        var xhr = new XMLHttpRequest();
+        var url = "http://127.0.0.1:8080/user";
+        xhr.open("GET", url, true);
+        xhr.setRequestHeader("Content-type", "application/json");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+//                var json = JSON.parse(xhr.responseText);
+                var test = xhr.responseText
+                alert(test)
+            }
+        };
+//        var data = JSON.stringify({"email": "hey@mail.com", "password": "101010"});
+        xhr.send();
+    }
+
+    function login() {
+        alert("login")
+    }
+</script>
 <h1>Welcome to Let's Chat</h1>
 <div>Username: <input type="text" name="username"></div>
 <div>Password: <input type="text" name="password"></div>
-<div><input type="button" name="register" value="register" ><input type="button" name="login" value="login"></div>
+<div><input type="button" name="register" value="register" onclick="register()"><input type="button" name="login" value="login" onclick="login()"></div>
 </body>
 </html>

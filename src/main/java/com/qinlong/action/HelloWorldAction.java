@@ -10,10 +10,9 @@ import javax.ws.rs.core.MediaType;
 public class HelloWorldAction {
 
     @GET
-    @Path("{name}")
     @Produces(MediaType.TEXT_PLAIN)
-    public String hello(@PathParam("name") String name)
+    public String hello()
     {
-        return "Hello " + name;
+        return "Hello ";
     }
 }
