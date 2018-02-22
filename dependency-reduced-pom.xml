@@ -62,19 +62,17 @@
     </plugins>
   </build>
   <properties>
-    <build.artifact.name>jettyserver</build.artifact.name>
-    <jersey.version>2.15</jersey.version>
-    <jetty.version>9.3.1.v20150714</jetty.version>
-    <commons.collections.version>4.0</commons.collections.version>
-    <java.target>1.8</java.target>
-    <main.class.name>com.qinlong.JettyServer</main.class.name>
-    <shade.version>2.3</shade.version>
-    <dependency.locations.enabled>false</dependency.locations.enabled>
-    <hulu.java.commons.version>1.7.47</hulu.java.commons.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.source>1.8</java.source>
+    <commons.collections.version>4.0</commons.collections.version>
+    <jersey.version>2.15</jersey.version>
     <maven.compiler.plugin.version>3.1</maven.compiler.plugin.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <commons.lang.version>3.3.2</commons.lang.version>
+    <main.class.name>com.qinlong.JettyServer</main.class.name>
+    <dependency.locations.enabled>false</dependency.locations.enabled>
+    <java.target>1.8</java.target>
+    <shade.version>2.3</shade.version>
+    <build.artifact.name>jettyserver</build.artifact.name>
   </properties>
 </project>
 

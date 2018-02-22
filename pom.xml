@@ -20,9 +20,7 @@
 
         <!-- dependency properties -->
         <jersey.version>2.15</jersey.version>
-        <jetty.version>9.3.1.v20150714</jetty.version>
         <commons.lang.version>3.3.2</commons.lang.version>
-        <hulu.java.commons.version>1.7.47</hulu.java.commons.version>
         <commons.collections.version>4.0</commons.collections.version>
 
         <!-- build properties -->
@@ -110,21 +108,6 @@
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-jetty-http</artifactId>
             <version>${jersey.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-server</artifactId>
-            <version>${jetty.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-servlet</artifactId>
-            <version>${jetty.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-servlets</artifactId>
-            <version>${jetty.version}</version>
         </dependency>
     </dependencies>
 
